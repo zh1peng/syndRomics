@@ -337,7 +337,7 @@ barmap_loading<-function(pca, pca_data, ndim=1:5, cutoff=0,resample_ci=NULL,conf
     }
 
     if (text_values){
-      b_plot<-b_plot+geom_text(aes(label=.data$loading_txt,y=.data$loading*1.1),size=2)
+      b_plot<-b_plot+geom_text(aes(label=.data$loading_txt,y=.data$loading*1.1),size=text_size)
     }else if (star_values){
       b_plot<-b_plot+geom_text(aes(label=.data$star, y=.data$loading*1.1), color='black')
     }
